@@ -94,11 +94,13 @@ int main(int argc, char** argv) {
 	cout<<endl;
 	obj.delete_position(1);
 	obj.display();
-
 	cout<<endl;
 	obj.AddKey("Meskhidze");
 	obj.display();
-	
+	cout<<endl;
+	obj.delete_last();
+	obj.display();
+	cout<<endl;
 
 	return 0;
 }
