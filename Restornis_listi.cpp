@@ -2,7 +2,9 @@
 #include <string.h>
 
 using namespace std;
+
 template <typename T>
+
 struct node{
     T data; 
     node *next;
@@ -122,8 +124,8 @@ int main(int argc, char** argv) {
 	for(int i=1; i<=10;i++){
 		Magidebi.AddKey(i);
 	}
-	Magidebi.display();
-	cout<<endl<<endl;
+	//Magidebi.display();
+	//cout<<endl<<endl;
 	//sakvebi
 	list<string> Dishes;
 	Dishes.AddKey("Mwvadi");
@@ -136,14 +138,36 @@ int main(int argc, char** argv) {
 	Dishes.AddKey("Gvino");
 	Dishes.AddKey("Yava");
 	Dishes.AddKey("Chai");
-	Dishes.display();
-
+	//Dishes.display();
+	cout<<"Restoranis Programa"<<endl;
 	cout<<endl;
 	cout<<"Magida #"<<Magidebi.PrintSeparateElement(1)<<endl;
-	cout<<Dishes.PrintSeparateElement(3)<< " " << Fasi(Dishes.PrintSeparateElement(3),2)<<" Lari"<<endl;
-	cout<<Dishes.PrintSeparateElement(2)<< " " << Fasi(Dishes.PrintSeparateElement(2),2)<<" Lari"<<endl;
-	cout<<Dishes.PrintSeparateElement(4)<< " " << Fasi(Dishes.PrintSeparateElement(4),3)<<" Lari"<<endl;
+	cout<<Dishes.PrintSeparateElement(1)<< ": " << Fasi(Dishes.PrintSeparateElement(1),2)<<" Lari"<<endl;
+	cout<<Dishes.PrintSeparateElement(2)<< ": " << Fasi(Dishes.PrintSeparateElement(2),2)<<" Lari"<<endl;
+	cout<<Dishes.PrintSeparateElement(3)<< ": " << Fasi(Dishes.PrintSeparateElement(3),3)<<" Lari"<<endl;
+	cout<<Dishes.PrintSeparateElement(4)<< ": " << Fasi(Dishes.PrintSeparateElement(3),4)<<" Lari"<<endl;
 	cout<<"--------------"<<endl;
-	cout<<"Sul Jami: " << Fasi(Dishes.PrintSeparateElement(3),2)+Fasi(Dishes.PrintSeparateElement(2),2)+Fasi(Dishes.PrintSeparateElement(4),3);
+	cout<<"Jami: " << Fasi(Dishes.PrintSeparateElement(3),2)+Fasi(Dishes.PrintSeparateElement(2),2)+Fasi(Dishes.PrintSeparateElement(4),3);
+	cout<<endl<<endl<<"===================================="<<endl<<endl;
+	cout<<"Magida #"<<Magidebi.PrintSeparateElement(2)<<endl;
+	cout<<Dishes.PrintSeparateElement(1)<< ": " << Fasi(Dishes.PrintSeparateElement(1),3)<<" Lari"<<endl;
+	cout<<Dishes.PrintSeparateElement(2)<< ": " << Fasi(Dishes.PrintSeparateElement(2),2)<<" Lari"<<endl;
+	cout<<Dishes.PrintSeparateElement(4)<< ": " << Fasi(Dishes.PrintSeparateElement(4),3)<<" Lari"<<endl;
+	cout<<"--------------"<<endl;
+	cout<<"Jami: " << Fasi(Dishes.PrintSeparateElement(2),2)+Fasi(Dishes.PrintSeparateElement(3),3)+Fasi(Dishes.PrintSeparateElement(4),4);
+	cout<<endl<<endl<<"===================================="<<endl<<endl;
+	cout<<"Magida #"<<Magidebi.PrintSeparateElement(3)<<endl;
+	cout<<Dishes.PrintSeparateElement(5)<< ": " << Fasi(Dishes.PrintSeparateElement(5),5)<<" Lari"<<endl;
+	cout<<Dishes.PrintSeparateElement(6)<< ": " << Fasi(Dishes.PrintSeparateElement(6),3)<<" Lari"<<endl;
+	cout<<Dishes.PrintSeparateElement(7)<< ": " << Fasi(Dishes.PrintSeparateElement(7),6)<<" Lari"<<endl;
+	cout<<"--------------"<<endl;
+	cout<<"Jami: " << Fasi(Dishes.PrintSeparateElement(5),5)+Fasi(Dishes.PrintSeparateElement(6),3)+Fasi(Dishes.PrintSeparateElement(7),6);
+	cout<<endl<<endl<<"===================================="<<endl<<endl;
+	cout<<"Magida #"<<Magidebi.PrintSeparateElement(4)<<endl;
+	cout<<Dishes.PrintSeparateElement(8)<< ": " << Fasi(Dishes.PrintSeparateElement(8),2)<<" Lari"<<endl;
+	cout<<Dishes.PrintSeparateElement(9)<< ": " << Fasi(Dishes.PrintSeparateElement(9),3)<<" Lari"<<endl;
+	cout<<Dishes.PrintSeparateElement(10)<< ": " << Fasi(Dishes.PrintSeparateElement(10),3)<<" Lari"<<endl;
+	cout<<"--------------"<<endl;
+	cout<<"Jami: " << Fasi(Dishes.PrintSeparateElement(8),2)+Fasi(Dishes.PrintSeparateElement(9),3)+Fasi(Dishes.PrintSeparateElement(10),3);
 	return 0;
 }
