@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <cstdlib>
 
 struct Node {
 	int data;
@@ -42,45 +42,23 @@ class Stack {
 			}
 			cout<<tmp->data;
 		}
-		
-		int GetTop(){
-			int p=Top->data;
-			
-			return p;
-		}
 };
 
 
 
 int main(int argc, char** argv) {
-	Stack *a=new Stack();
-	Stack *b=new Stack();
-	Stack *c=new Stack();
+	Stack *A;
+	A=new Stack();
+	 A->Push(3);
+	 A->Push(7);
+	 A->Push(2);
+	 A->Push(5);
+	 A->print();
+	 cout<<endl;
 	
-    int m; cout<<"M="; cin>>m;
-    int n; cout<<"N="; cin>>n;
-	
-	for (int i=0; i<m; i++){
-	   int s; cout<<i<<"elementi= "; cin>>s;
-	   a->Push(s);
-	}
-	
-	for (int i=0; i<n; i++){
-	   int s; cout<<i<<"elementi= "; cin>>s;
-	   b->Push(s);
-	}
-	
-    for (int i=0; i<m; i++){
-    	c->Push(a->GetTop());
-    	a->Pop();
-	}
-	
-    for (int i=0; i<n; i++){
-    	c->Push(b->GetTop());
-    	b->Pop();
-	}
-
-	c->print();
+	 A->Pop();
+	 A->print();
+	 cout<<endl;
 	
 	system("pause");
 	return 0;
